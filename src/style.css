@@ -1,8 +1,8 @@
 html body {
-  min-width: 1200px;
+	min-width: 1200px;
 	height: 100vh;
 	width: 100vw;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+	font-family: Circe Rounded;
 }
 
 * {
@@ -17,23 +17,25 @@ body {
 
 :root {
 	--primary: #323854;
-	--secondary: #008AFF;
+	--secondary: #008aff;
+	--input:#79747F;
 	--background: white;
-	--surface: #DECFFF;
-	--onSurface: #8D7FC7;
-  --textSurface:#434B74;
-  --tableBrd:#BBE7B9;
-  --table:#ECECEC;
-  --tableBrd:#79747F;
-  --tableAct:#D7F0D6;
-  --tableActBrd:#BBE7B9;
-  --tablePas:#C8C5CD;
-  --tablePasBrd:#C8C5CD;
-  --tableOn:#EEEEFF;
-  --tableOnBrd:#DECFFF;
-  --card:#7362BC;
-  --card2:#FFF1CB;
-  --warn:#E12828;
+	--surface: #decfff;
+	--textSurface: #434b74;
+	--onSurface: #8d7fc7;
+	--textOnSurface:white;
+	--tableBrd: #bbe7b9;
+	--table: #ececec;
+	--tableBrd: #79747f;
+	--tableAct: #d7f0d6;
+	--tableActBrd: #bbe7b9;
+	--tablePas: #c8c5cd;
+	--tablePasBrd: #c8c5cd;
+	--tableOn: #eeeeff;
+	--tableOnBrd: #decfff;
+	--card: #7362bc;
+	--card2: #fff1cb;
+	--warn: #e12828;
 	--br: 100px;
 	--fsz10: clamp(0.3125rem, -0.2083rem + 0.6944vw, 0.625rem);
 	--fsz12: clamp(0.375rem, -0.25rem + 0.8333vw, 0.75rem);

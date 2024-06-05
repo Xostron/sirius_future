@@ -1,0 +1,31 @@
+button {
+	cursor: pointer;
+	border: none;
+}
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	line-height: var(--fsz45);
+	padding: 0 var(--fsz40);
+	border-radius: var(--br);
+	background-color: var(--onSurface);
+	color: var(--textOnSurface);
+	font-size: var(--fsz18);
+	font-weight: 700;
+}
+
+input,
+input:hover,
+input:focus {
+}
+input {
+    outline: none;
+	width: 100%;
+	font-size: var(--fsz12);
+	color: var(--input);
+}
+.input-auth{
+
+}

@@ -1,11 +1,24 @@
-
+import { useState } from "react"
+import Title from "./title"
+import Form from "./form"
+import Forget from "./forget"
+import NoAcc from "./no_acc"
+import Lang from "./lang"
+import "./style.css"
 
 const Login = () => {
+	const [email, setEmail] = useState<string | number>("")
+	const [psw, setPsw] = useState<string | number>("")
 	return (
-		<div className='content'>
-			<h1>Login</h1>
-			<p>Login</p>
-		</div>
+		<>
+			<main className='login'>
+				<Title />
+				<Form />
+				<Forget />
+				<NoAcc />
+			</main>
+			<Lang />
+		</>
 	)
 }
 
