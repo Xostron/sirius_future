@@ -1,5 +1,5 @@
 html body {
-	min-width: 1200px;
+	min-width: 400px;
 	height: 100vh;
 	width: 100vw;
 	font-family: Circe Rounded;
@@ -18,14 +18,14 @@ body {
 :root {
 	--primary: #323854;
 	--secondary: #008aff;
-	--input:#79747F;
+	--brd-color: #ececec;
+	--input: #79747f;
 	--background: white;
 	--surface: #decfff;
 	--textSurface: #434b74;
 	--onSurface: #8d7fc7;
-	--textOnSurface:white;
+	--textOnSurface: white;
 	--tableBrd: #bbe7b9;
-	--table: #ececec;
 	--tableBrd: #79747f;
 	--tableAct: #d7f0d6;
 	--tableActBrd: #bbe7b9;

@@ -7,25 +7,48 @@ button {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	line-height: var(--fsz45);
+	height: var(--fsz45);
 	padding: 0 var(--fsz40);
 	border-radius: var(--br);
 	background-color: var(--onSurface);
 	color: var(--textOnSurface);
 	font-size: var(--fsz18);
 	font-weight: 700;
+	font-family: Circe Rounded;
 }
-
+.btn-text {
+	background-color: transparent;
+	color: var(--secondary);
+	width: fit-content;
+	padding-inline: 0;
+	font-size: var(--fsz16);
+}
+/* Общий стиль input */
 input,
 input:hover,
 input:focus {
 }
 input {
-    outline: none;
+	outline: none;
 	width: 100%;
-	font-size: var(--fsz12);
 	color: var(--input);
+	padding: 10px 12px 10px 12px;
 }
-.input-auth{
+.input-auth {
+	border: 1px solid var(--brd-color);
+	border-radius: var(--fsz10);
+}
 
+/* Checkbox */
+input[type="checkbox"] {
+	width: 24px;
+	height: 24px;
+}
+.checkbox {
+	display: inline-flex;
+	white-space: nowrap;
+	width: fit-content;
+	align-items: center;
+	gap: 12px;
+	color: var(--input);
 }

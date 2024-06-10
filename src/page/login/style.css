@@ -1,32 +1,91 @@
+/* Страница */
 .login {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 30%;
-    border: 1px solid black;
-    height: 90vh;
+	position: relative;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	height: calc(100vh - 100px);
 }
+/* Основоное содержимое */
+.login-content {
+	width: 339px;
+	grid-area: 1/2/1/2;
+	display: flex;
+	flex-direction: column;
+	height: fit-content;
+	align-self: center;
+	justify-self: center;
+}
+/* Заголовок */
 .login-title {
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 32px;
 }
+.login-title > img {
+	height: 80px;
+}
+.login-title > p {
+	font-size: 40px;
+	font-weight: 400;
+	white-space: nowrap;
+	color: var(--primary);
+}
+
+/* Форма */
 .login-form {
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 16px;
+	width: 100%;
+	/* background-color: antiquewhite; */
+	border: none;
 }
+.login-form-psw {
+	margin-top: 12px;
+}
+.login-form-check {
+	margin-top: 16px;
+}
+.login-form-btn {
+	margin-top: 32px;
+}
+/* Кнопки - забыт пароль */
 .login-forget {
-    display: flex;
-    width: 100%;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding-top: 6px;
 }
+
+/* Кнопки - нет аккаунта, зарегистрироваться */
 .login-noacc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 64px;
 }
 .login-noacc > p {
-    text-align: center;
+	display: flex;
+	text-align: center;
+	font-size: var(--fsz16);
 }
+
+/* Переключение языка */
 .login-lang {
+	display: flex;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	gap: var(--fsz12);
+	/* border: 1px solid black; */
+	align-items: flex-end;
+}
+.lang {
+	color: var(--input);
+}
+.lang-active {
+	color: var(--card);
+	font-size: var(--fsz24);
 }

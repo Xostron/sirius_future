@@ -7,15 +7,15 @@ import Lang from "./lang"
 import "./style.css"
 
 const Login = () => {
-	const [email, setEmail] = useState<string | number>("")
-	const [psw, setPsw] = useState<string | number>("")
 	return (
 		<>
 			<main className='login'>
-				<Title />
-				<Form />
-				<Forget />
-				<NoAcc />
+				<div className='login-content'>
+					<Title />
+					<Form />
+					<Forget />
+					<NoAcc />
+				</div>
 			</main>
 			<Lang />
 		</>
