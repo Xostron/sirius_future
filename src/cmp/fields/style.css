@@ -14,7 +14,7 @@ button {
 	color: var(--textOnSurface);
 	font-size: var(--fsz18);
 	font-weight: 700;
-	font-family: Circe Rounded;
+	font-family: var(--font);
 }
 .btn-text {
 	background-color: transparent;

@@ -2,18 +2,26 @@
 .login {
 	position: relative;
 	display: grid;
-	grid-template-columns: auto 1fr auto;
-	height: calc(100vh - 100px);
+	grid-template-columns: clamp(0rem, -44.444rem + 92.59vw, 25rem) auto clamp(
+			0rem,
+			-44.444rem + 92.59vw,
+			25rem
+		);
+	/* width: calc(100vw - 2 * var(--pad)); */
+	height: 100vh;
+	/* background-color: aquamarine; */
 }
-/* Основоное содержимое */
+/* Основное содержимое */
 .login-content {
-	width: 339px;
 	grid-area: 1/2/1/2;
 	display: flex;
+	min-width: 320px;
+	max-width: 380px;
+	width: 100%;
 	flex-direction: column;
-	height: fit-content;
 	align-self: center;
 	justify-self: center;
+	/* background-color: antiquewhite; */
 }
 /* Заголовок */
 .login-title {
@@ -38,24 +46,33 @@
 	flex-direction: column;
 	padding-top: 16px;
 	width: 100%;
-	/* background-color: antiquewhite; */
 	border: none;
-}
-.login-form-psw {
-	margin-top: 12px;
-}
-.login-form-check {
-	margin-top: 16px;
+	row-gap: 16px;
+	/* align-items: center; */
 }
 .login-form-btn {
-	margin-top: 32px;
+	border-radius: 10px;
+	height: 50px;
+	background: linear-gradient(
+		267.41deg,
+		rgb(147, 195, 255) -0.17%,
+		rgb(183, 160, 255) 40.96%,
+		rgb(218, 123, 255) 88.56%
+	);
+	font-size: var(--fsz28);
 }
+
 /* Кнопки - забыт пароль */
 .login-forget {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
 	padding-top: 6px;
+	/* font-size: 24px!important; */
+}
+.btn-text{
+	font-size: 18px;
+	font-weight: 400;
 }
 
 /* Кнопки - нет аккаунта, зарегистрироваться */
@@ -68,24 +85,24 @@
 .login-noacc > p {
 	display: flex;
 	text-align: center;
-	font-size: var(--fsz16);
+	font-size: 16px;
 }
 
 /* Переключение языка */
 .login-lang {
 	display: flex;
 	position: absolute;
-	bottom: 10px;
+	bottom: 0%;
 	left: 50%;
 	transform: translateX(-50%);
 	gap: var(--fsz12);
-	/* border: 1px solid black; */
-	align-items: flex-end;
 }
 .lang {
+	text-align: center;
 	color: var(--input);
+	font-size: 12px;
 }
 .lang-active {
 	color: var(--card);
-	font-size: var(--fsz24);
+	font-size: 20px;
 }

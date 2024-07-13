@@ -1,20 +1,3 @@
-html body {
-	min-width: 400px;
-	height: 100vh;
-	width: 100vw;
-	font-family: Circe Rounded;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	padding-inline: 15px;
-}
-
 :root {
 	--primary: #323854;
 	--secondary: #008aff;
@@ -66,6 +49,37 @@ body {
 	--fsz300: clamp(16.875rem, 13.75rem + 4.1667vw, 18.75rem);
 	--brdP: 1px solid var(--primary);
 	--brdS: 1px solid var(--secondary);
-	font-family: Q-Medium;
-	color: var(--primary);
+	--font: "circe rounded";
+	--color: var(--primary);
+	--pad: clamp(0.313rem, 0.085rem + 1.14vw, 0.938rem)
+}
+
+@font-face {
+	font-family: 'circe rounded';
+	src: url("../public/fonts/Circe_Rounded_Regular/CirceRounded-Regular.ttf");
+}
+@font-face {
+	font-family: 'circe rounded';
+	src: url("../public/fonts/Circe_Rounded_Regular/CirceRounded-Regular.woff");
+}
+@font-face {
+	font-family: 'circe rounded';
+	src: url("../public/fonts/Circe_Rounded_Regular/CirceRounded-Regular.woff2");
+}
+html body {
+	min-width: 320px;
+	width: 100vw;
+	height: 100vh;
+	font-family: var(--font);
+	/* background-color: #79747f; */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding-inline: var(--pad);
 }

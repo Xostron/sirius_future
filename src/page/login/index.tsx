@@ -8,17 +8,17 @@ import "./style.css"
 
 const Login = () => {
 	return (
-		<>
-			<main className='login'>
-				<div className='login-content'>
-					<Title />
-					<Form />
-					<Forget />
-					<NoAcc />
-				</div>
-			</main>
+		// <div className='wrp'>
+		<section className='login'>
+			<div className='login-content'>
+				<Title />
+				<Form />
+				<Forget />
+				<NoAcc />
+			</div>
 			<Lang />
-		</>
+		</section>
+		// </div>
 	)
 }
 
